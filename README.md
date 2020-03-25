@@ -7,3 +7,21 @@ Cross compile for embedded linux
 currently failing
 
 appears to be a options change before this release
+
+Usage: fxload [-v] [-V] [-t type] [-d vid:pid] [-p bus,addr] [-s loader] -i firmware
+
+  -i <path>       -- Firmware to upload
+  
+  -s <path>       -- Second stage loader
+  
+  -t <type>       -- Target type: an21, fx, fx2, fx2lp, fx3
+  
+  -d <vid:pid>    -- Target device, as an USB VID:PID
+  
+  -p <bus,addr>   -- Target device, as a libusb bus number and device address path
+  
+    -v              -- Increase verbosity
+
+  -q              -- Decrease verbosity (silent mode)
+  
+  -V              -- Print program version
