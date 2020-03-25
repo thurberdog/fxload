@@ -34,14 +34,25 @@ Seems to be working
 
 sudo fxload -t fx2 -d 0f44:ef21 -I /usr/local/share/PolhemusUsb/PatriotUSB2.hex -s /usr/local/share/PolhemusUsb/a3load.hex
 microcontroller type: fx2
+
 /usr/local/share/PolhemusUsb/PatriotUSB2.hex: type Intel HEX
+
 /usr/local/share/PolhemusUsb/a3load.hex: type Intel HEX
+
 stop CPU
+
 ... WROTE: 775 bytes, 10 segments, avg 77
+
 reset CPU
+
 2nd stage: write external memory
+
 stop CPU
+
 2nd stage: write on-chip memory
+
 ... WROTE: 3027 bytes, 45 segments, avg 67
+
 reset CPU
+
 Now need to check and see if firmware is functional
