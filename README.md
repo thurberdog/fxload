@@ -1,12 +1,6 @@
 # fxload
 
-Cross compile for embedded linux
-
-/sbin/fxload -t fx2 -D /dev/bus/usb/001/002 -I /usr/local/share/PolhemusUsb/PatriotUSB2.hex -s /usr/local/share/PolhemusUsb/a3load.hex
-
-currently failing
-
-appears to be a options change before this release
+Cross compiled for embedded linux
 
 Usage: fxload [-v] [-V] [-t type] [-d vid:pid] [-p bus,addr] [-s loader] -i firmware
 
@@ -26,13 +20,8 @@ Usage: fxload [-v] [-V] [-t type] [-d vid:pid] [-p bus,addr] [-s loader] -i firm
   
   -V              -- Print program version
   
-  Believe needs to be changed from -D to -d as follows
   
   /sbin/fxload -t fx2 -d 0f44:ef21 -I /usr/local/share/PolhemusUsb/PatriotUSB2.hex -s /usr/local/share/PolhemusUsb/a3load.hex
-  
-Seems to be working
-
-sudo fxload -t fx2 -d 0f44:ef21 -I /usr/local/share/PolhemusUsb/PatriotUSB2.hex -s /usr/local/share/PolhemusUsb/a3load.hex
 
 microcontroller type: fx2
 
@@ -56,4 +45,4 @@ stop CPU
 
 reset CPU
 
-Now need to check and see if firmware is functional
+Now firmware is functional
