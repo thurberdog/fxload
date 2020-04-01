@@ -46,3 +46,18 @@ stop CPU
 reset CPU
 
 Now firmware is functional
+
+Key files in loading the Patriot 
+
+/sbin/fxload -- cross compiled for ARM binary executable
+
+ /etc/udev/rules.d/90-Polhemus_trkr.rules  -- script to run fxload when USB device is plugged in
+
+# Patriot HS -- Load FW
+ATTR{idVendor}=="0f44", ATTR{idProduct}=="ef21",ACTION=="add", \
+RUN+="/sbin/fxload -t fx2 -d 0f44:ef21 -I /usr/local/share/PolhemusUsb/PatriotUSB2.hex -s /usr/local/share/PolhemusUsb/a3load.hex"
+
+# Patriot HS -- Permissions
+ATTR{idVendor}=="0f44", ATTR{idProduct}=="ef20",ACTION=="add",MODE="0666"
+/usr/local/share/PolhemusUsb/   location of Patriot firmware files
+
