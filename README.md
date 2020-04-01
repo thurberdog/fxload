@@ -61,3 +61,16 @@ RUN+="/sbin/fxload -t fx2 -d 0f44:ef21 -I /usr/local/share/PolhemusUsb/PatriotUS
 ATTR{idVendor}=="0f44", ATTR{idProduct}=="ef20",ACTION=="add",MODE="0666"
 /usr/local/share/PolhemusUsb/   location of Patriot firmware files
 
+First download the repo zip and unzip it
+
+Plug G2 SD card into USB reader/writter and insert into PC
+
+Copy files from the unzipped fxload directories to the same directories on the SD card
+
+copy fxload-Master/etc/udev/rules.d/*  to sdcard/etc/udev/rules.d/*
+
+copy fxload-Master/sbin/* to sdcard/sbin/*
+
+copy fxload-Master/usr/local/share/PolhemusUsb/* sdcard/usr/local/share/PolhemusUsb/*
+
+Plug SD card back into G2 and plug Patriot into USB port and power up
