@@ -61,7 +61,7 @@ RUN+="/sbin/fxload -t fx2 -d 0f44:ef21 -I /usr/local/share/PolhemusUsb/PatriotUS
 ATTR{idVendor}=="0f44", ATTR{idProduct}=="ef20",ACTION=="add",MODE="0666"
 /usr/local/share/PolhemusUsb/   
 
-#Installing fxload
+# Installing fxload
 
 First download the repo zip and unzip it
 
