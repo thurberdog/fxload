@@ -14,13 +14,13 @@ Usage: fxload [-v] [-V] [-t type] [-d vid:pid] [-p bus,addr] [-s loader] -i firm
   
   -p <bus,addr>   -- Target device, as a libusb bus number and device address path
   
-    -v              -- Increase verbosity
+  -v              -- Increase verbosity
 
   -q              -- Decrease verbosity (silent mode)
   
   -V              -- Print program version
   
-fxload -t fx2 -d 0f44:ef21 -I /usr/local/share/PolhemusUsb/PatriotUSB2.hex -s /usr/local/share/PolhemusUsb/a3load.hex
+   fxload -t fx2 -d 0f44:ef21 -I /usr/local/share/PolhemusUsb/PatriotUSB2.hex -s /usr/local/share/PolhemusUsb/a3load.hex
 
 microcontroller type: fx2
 
