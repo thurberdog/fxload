@@ -1,5 +1,7 @@
 # fxload
 
+http://linux-hotplug.sourceforge.net
+
 Cross compiled for embedded linux
 
 Usage: fxload [-v] [-V] [-t type] [-d vid:pid] [-p bus,addr] [-s loader] -i firmware
