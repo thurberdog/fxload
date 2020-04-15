@@ -1,5 +1,10 @@
 # fxload
 
+
+Add to aruments line in the Qt Creator run environment
+
+-v -t fx2 -d 0f44:ef20 -I /usr/local/share/PolhemusUsb/PatriotUSB2.hex -s /usr/local/share/PolhemusUsb/a3load.hex
+
 http://linux-hotplug.sourceforge.net
 
 About Hotplugging
