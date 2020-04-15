@@ -2,6 +2,15 @@
 
 http://linux-hotplug.sourceforge.net
 
+About Hotplugging
+Starting with kernel 2.4 (in January 2001), hotplugging became a standard feature of GNU/Linux. It's been backported to kernel 2.2 (for USB), and kernel 2.6 makes it available to all sysfs-adapted busses and driver classes.
+
+Hotplug lets you plug in new devices and use them immediately. That means that users won't need to learn so much system administration; systems will at least partially autoconfigure themselves. Initially, hotplug included support for USB and PCI (Cardbus) devices, and could automatically configure some common network interfaces. Updated versions include IEEE 1394 (Firewire/i.Link) support and can download firmware to USB devices that need it. On mainframes, S/390 channel devices uses hotplugging to report device attach and other state change events. For laptops, newer kernels also include support for reporting docking station activity.
+
+In the Linux 2.6 kernel, hotplugging has been integrated with the driver model core so that any bus or class can report hotplug events when devices are added or removed. Quite a few subsystems now support hotplugging; the list at this site is not currently exhaustive. There's work afoot to improve the situations for hotplugging many kinds of devices, including things like disks, power supplies (many newer UPSes are usb-programmable), input devices, and even more. In particular, udev builds on hotplug, to help make sure your /dev/... directory matches the devices actually present on your system. Now would be a good time to help integrate support for your favorite devices!
+
+Basic hotplug support is included in almost all current distributions of GNU/Linux, including RedHat, Debian, and United Linux. A number of separate packages bundle their own add-ons, to automate things like firmware downloading and desktop integration.
+
 Cross compiled for embedded linux
 
 Usage: fxload [-v] [-V] [-t type] [-d vid:pid] [-p bus,addr] [-s loader] -i firmware
